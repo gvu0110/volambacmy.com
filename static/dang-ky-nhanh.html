@@ -1,0 +1,197 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <title>Đăng Ký Nhanh</title>
+    <link rel="stylesheet" type="text/css" href="css/skin_subpage.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="shortcut icon" href="images/favicon.ico" />
+</head>
+
+<body id="subpage" class="Subpage">
+    <div class="wrap-header">
+        <div class="wrap-footer">
+            <div id="header" class="wrapper">
+                <div class="frm-navigate">
+                    <ul class="nav-top">
+                    </ul>
+                </div>
+
+            </div>
+            <div id="main">
+                <div class="wrapper">
+                    <div class="left-main">
+
+                        <div class="box-feature">
+                            <a href="huong-dan-cai-dat-game-tren-windows.html" class="sprite-play TaiGame">Cài đặt
+                                ngay</a>
+                            <a href="dang-ky-nhanh.html" class="sprite-regis" id="zme-registerwg">Đăng ký nhanh</a>
+                            <a href="#" class="sprite-payment NapThe">Nạp thẻ</a>
+                        </div>
+
+                        <ul class="left-nav">
+                            <li><a href="#" class="sprite-left-manage-acc">Quản lý tài khoản</a></li>
+                            <li><a href="#" class="sprite-left-support">Chat với hỗ trợ</a></li>
+                        </ul>
+                        <br>
+                        <br>
+
+                    </div>
+                    <div class="right-main">
+                        <div class="bread">
+                            <ul id="breadcrumbs" class="breadcrumb">
+                                <li><a href="index.html"><span>Trang chủ</span></a></li>
+                                <li><a href="#"><span>Đăng Ký Nhanh</span></a></li>
+                            </ul>
+                            <h1 class="page-title small-page-title ">Đăng Ký Nhanh</h1>
+                        </div>
+                        <div id="content" class="static">
+                            <div class="pool-content">
+                                <div class="StaticMain">
+                                    <div class="ContentBlock">
+                                        <br>
+                                        <div class="wrap-contact100">
+                                            <form class="contact100-form" onsubmit="return checkForm(this);"
+                                                action="http://localhost:8000/adduser" method="POST">
+                                                <div class="wrap-input100">
+                                                    <span><strong>Tên Đăng Nhập</strong></span>
+                                                    <input class="input100" type="text" name="username"
+                                                        placeholder="Nhập vào tên đăng nhập">
+                                                    <span class="focus-input100"></span>
+                                                </div>
+
+                                                <div class="wrap-input100">
+                                                    <span><strong>Mật Khẩu</strong></span>
+                                                    <input class="input100" type="password" name="password" id="pwd1"
+                                                        placeholder="Nhập vào mật khẩu">
+                                                    <span class="focus-input100"></span>
+                                                </div>
+
+                                                <div class="wrap-input100">
+                                                    <span><strong>Xác Nhận Mật Khẩu</strong></span>
+                                                    <input class="input100" type="password" id="pwd2"
+                                                        placeholder="Nhập lại mật khẩu một lần nữa">
+                                                    <span class="focus-input100"></span>
+                                                </div>
+
+                                                <div>
+                                                    <input type="checkbox" onclick="showPassword()">
+                                                    <span>Hiển thị mật khẩu</span>
+                                                </div>
+                                                <br>
+
+                                                <div class="container-contact100-form-btn">
+                                                    <div class="wrap-contact100-form-btn">
+                                                        <div class="contact100-form-bgbtn"></div>
+                                                        <button class="contact100-form-btn">
+                                                            <span>
+                                                                Submit
+                                                                <i class="fa fa-long-arrow-right m-l-7"
+                                                                    aria-hidden="true"></i>
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <script type="text/javascript">
+                                                function showPassword() {
+                                                    var x1 = document.getElementById("pwd1");
+                                                    var x2 = document.getElementById("pwd2");
+                                                    if (x1.type === "password") {
+                                                        x1.type = "text";
+                                                    } else {
+                                                        x1.type = "password";
+                                                    }
+                                                    if (x2.type === "password") {
+                                                        x2.type = "text";
+                                                    } else {
+                                                        x2.type = "password";
+                                                    }
+                                                }
+
+                                                function checkForm(form) {
+                                                    if (form.username.value == "") {
+                                                        alert("LỖI: TÊN ĐĂNG NHẬP KHÔNG THỂ BỎ TRỐNG!");
+                                                        form.username.focus();
+                                                        return false;
+                                                    }
+                                                    if (form.username.value.length < 6) {
+                                                        alert("LỖI: USERNAME PHẢI CÓ ÍT NHẤT 6 KÝ TỰ!");
+                                                        form.pwd1.focus();
+                                                        return false;
+                                                    }
+                                                    re = /^\w+$/;
+                                                    if (!re.test(form.username.value)) {
+                                                        alert(
+                                                            "LỖI: TÊN ĐĂNG NHẬP CHỈ CÓ CHỮ CÁI TIẾNG ANH, CHỮ SỐ VÀ GẠCH DƯỚI!");
+                                                        form.username.focus();
+                                                        return false;
+                                                    }
+
+                                                    if (form.pwd1.value != "" && form.pwd1.value == form.pwd2.value) {
+                                                        if (form.pwd1.value.length < 6) {
+                                                            alert("LỖI: MẬT KHẨU PHẢI CÓ ÍT NHẤT 6 KÝ TỰ!");
+                                                            form.pwd1.focus();
+                                                            return false;
+                                                        }
+                                                        if (form.pwd1.value == form.username.value) {
+                                                            alert("LỖI: MẬT KHẨU PHẢI KHÁC TÊN ĐĂNG NHẬP!");
+                                                            form.pwd1.focus();
+                                                            return false;
+                                                        }
+                                                        // re = /[0-9]/;
+                                                        // if(!re.test(form.pwd1.value)) {
+                                                        //   alert("Error: password must contain at least one number (0-9)!");
+                                                        //   form.pwd1.focus();
+                                                        //   return false;
+                                                        // }
+                                                        // re = /[a-z]/;
+                                                        // if(!re.test(form.pwd1.value)) {
+                                                        //   alert("Error: password must contain at least one lowercase letter (a-z)!");
+                                                        //   form.pwd1.focus();
+                                                        //   return false;
+                                                        // }
+                                                        // re = /[A-Z]/;
+                                                        // if(!re.test(form.pwd1.value)) {
+                                                        //   alert("Error: password must contain at least one uppercase letter (A-Z)!");
+                                                        //   form.pwd1.focus();
+                                                        //   return false;
+                                                        // }
+                                                    } else {
+                                                        alert(
+                                                            "LỖI: MẬT KHẨU NHẬP KHÔNG TRÙNG KHỚP!");
+                                                        form.pwd1.focus();
+                                                        return false;
+                                                    }
+                                                    return true;
+                                                }
+                                            </script>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#header" class="btn-top-page" style="position: fixed; top: 60%; left: 80%;">Lên
+                                trang đầu</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <div class="wrapper">
+                    <div class="info-company">
+                        <a class="VNG"></a><a class="KingSoft">KingSoft</a>
+                        <p>
+                            Bản quyền trò chơi thuộc công ty Kingsoft. Công ty Cổ phần VNG phân phối độc quyền tại Việt
+                            Nam.
+                            <br>
+                            Lưu ý đây không phải là bản chính thức cân nhắc khi tham gia.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

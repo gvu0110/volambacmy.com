@@ -1,0 +1,2850 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block
+}
+
+body {
+    line-height: 1
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+blockquote,
+q {
+    quotes: none
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+.ico-act-tab {
+    background: url(images/icon-tab-hv.png) no-repeat scroll 0 center;
+    display: none;
+    height: 6px;
+    left: 50%;
+    margin-left: -9.5px;
+    position: absolute;
+    width: 19px
+}
+
+.active .ico-act-tab {
+    display: block
+}
+
+.off,
+.off a {
+    cursor: default
+}
+
+.sprite-4rum,
+.sprite-camnang,
+.sprite-canbiet,
+.sprite-news,
+.sprite-home,
+.sprite-support {
+    background: url(http://img.zing.vn/products/wjx2/skin-2015/images/sprite-nav.png) no-repeat;
+    display: inline-block;
+    overflow: hidden;
+    text-align: left;
+    text-indent: -9999px
+}
+
+.sprite-4rum:hover,
+.active .sprite-4rum:hover,
+.active .sprite-4rum {
+    background-position: -10px 0;
+    width: 120px
+}
+
+.off .sprite-4rum {
+    background-position: -10px -43px;
+    width: 120px
+}
+
+.sprite-4rum {
+    background-position: -10px -86px;
+    width: 120px
+}
+
+.sprite-camnang:hover,
+.active .sprite-camnang:hover,
+.active .sprite-camnang {
+    background-position: -10px -129px;
+    width: 120px
+}
+
+.off .sprite-camnang {
+    background-position: -10px -172px;
+    height: 32px;
+    width: 120px
+}
+
+.sprite-camnang {
+    background-position: -10px -214px;
+    width: 120px
+}
+
+.sprite-canbiet:hover,
+.active .sprite-canbiet:hover,
+.active .sprite-canbiet {
+    background-position: -10px -257px;
+    width: 120px
+}
+
+.off .sprite-canbiet {
+    background-position: -10px -300px;
+    width: 120px
+}
+
+.sprite-canbiet {
+    background-position: -10px -343px;
+    width: 120px
+}
+
+.sprite-news:hover,
+.active .sprite-news:hover,
+.active .sprite-news {
+    background-position: -10px -386px;
+    width: 120px
+}
+
+.off .sprite-news {
+    background-position: -10px -429px;
+    height: 32px;
+    width: 120px
+}
+
+.sprite-news {
+    background-position: -10px -471px;
+    width: 120px
+}
+
+.sprite-home:hover,
+.active .sprite-home:hover,
+.active .sprite-home {
+    background-position: -10px -514px;
+    width: 103px
+}
+
+.off .sprite-home {
+    background-position: -10px -557px;
+    width: 103px
+}
+
+.sprite-home {
+    background-position: -10px -600px;
+    width: 103px
+}
+
+.sprite-support:hover,
+.active .sprite-support:hover,
+.active .sprite-support {
+    background-position: -10px -643px;
+    width: 83px
+}
+
+.off .sprite-support {
+    background-position: -10px -686px;
+    width: 83px
+}
+
+.sprite-support {
+    background-position: -10px -729px;
+    width: 83px
+}
+
+.sprite-btn-camnang.off,
+.sprite-btn-camnang,
+.sprite-left-manage-acc.off,
+.sprite-left-manage-acc,
+.sprite-left-rank,
+.sprite-left-rank.off,
+.sprite-left-support.off,
+.sprite-left-support,
+.sprite-left-sv.off,
+.sprite-left-sv,
+.sprite-play.off,
+.sprite-play,
+.sprite-regis.off,
+.sprite-regis,
+.sprite-payment.off,
+.sprite-payment,
+.sprite-tab-feature,
+.sprite-tab-fb,
+.sprite-tab-4rum,
+.sprite-tab-war,
+.sprite-tab-news,
+.sprite-tab-all,
+.sprite-bullet-drag-scroll,
+.sprite-find {
+    background: url(../images/sprite-button.png) no-repeat;
+    display: inline-block;
+    overflow: hidden;
+    text-align: left;
+    text-indent: -9999px
+}
+
+.sprite-btn-camnang:hover {
+    background-position: -10px 0;
+    height: 95px;
+    width: 230px
+}
+
+.sprite-btn-camnang.off {
+    background-position: -10px -105px;
+    height: 95px;
+    width: 230px
+}
+
+.sprite-btn-camnang {
+    background-position: -10px -210px;
+    height: 95px;
+    width: 230px
+}
+
+.sprite-left-manage-acc:hover {
+    background-position: -10px -315px;
+    height: 60px;
+    width: 230px
+}
+
+.sprite-left-manage-acc.off {
+    background-position: -10px -385px;
+    height: 60px;
+    width: 230px
+}
+
+.sprite-left-manage-acc {
+    background-position: -10px -455px;
+    height: 60px;
+    width: 230px
+}
+
+.sprite-left-rank {
+    background-position: -10px -525px;
+    height: 60px;
+    width: 230px
+}
+
+.sprite-left-rank:hover {
+    background-position: -10px -595px;
+    height: 60px;
+    width: 230px
+}
+
+.sprite-left-rank.off {
+    background-position: -10px -665px;
+    height: 60px;
+    width: 230px
+}
+
+.sprite-left-support:hover {
+    background-position: -10px -735px;
+    height: 60px;
+    width: 230px
+}
+
+.sprite-left-support.off {
+    background-position: -10px -805px;
+    height: 60px;
+    width: 230px
+}
+
+.sprite-left-support {
+    background-position: -10px -875px;
+    height: 60px;
+    width: 230px
+}
+
+.sprite-left-sv:hover {
+    background-position: -10px -945px;
+    height: 60px;
+    width: 230px
+}
+
+.sprite-left-sv.off {
+    background-position: -10px -1015px;
+    height: 60px;
+    width: 230px
+}
+
+.sprite-left-sv {
+    background-position: -10px -1085px;
+    height: 60px;
+    width: 230px
+}
+
+.sprite-play:hover {
+    background-position: -10px -1155px;
+    height: 170px;
+    width: 230px
+}
+
+.sprite-play.off {
+    background-position: -10px -1335px;
+    height: 170px;
+    width: 230px
+}
+
+.sprite-play {
+    background-position: -10px -1515px;
+    height: 170px;
+    width: 230px
+}
+
+.sprite-regis:hover {
+    background-position: -10px -1695px;
+    height: 60px;
+    width: 116px
+}
+
+.sprite-regis.off {
+    background-position: -10px -1765px;
+    height: 60px;
+    width: 116px
+}
+
+.sprite-regis {
+    background-position: -10px -1835px;
+    height: 60px;
+    width: 116px
+}
+
+.sprite-payment:hover {
+    background-position: -10px -1905px;
+    height: 60px;
+    width: 114px
+}
+
+.sprite-payment.off {
+    background-position: -10px -1975px;
+    height: 60px;
+    width: 114px
+}
+
+.sprite-payment {
+    background-position: -10px -2045px;
+    height: 60px;
+    width: 114px
+}
+
+.sprite-tab-feature:hover,
+.active .sprite-tab-feature:hover,
+.active .sprite-tab-feature {
+    background-position: -10px -2115px;
+    height: 35px;
+    width: 110px
+}
+
+.sprite-tab-feature {
+    background-position: -10px -2160px;
+    height: 35px;
+    width: 110px
+}
+
+.sprite-tab-fb:hover,
+.active .sprite-tab-fb:hover,
+.active .sprite-tab-fb {
+    background-position: -130px -2115px;
+    height: 35px;
+    width: 100px
+}
+
+.sprite-tab-fb {
+    background-position: -130px -2160px;
+    height: 35px;
+    width: 100px
+}
+
+.sprite-tab-4rum:hover,
+.active .sprite-tab-4rum:hover,
+.active .sprite-tab-4rum {
+    background-position: -134px -1905px;
+    height: 35px;
+    width: 95px
+}
+
+.sprite-tab-4rum {
+    background-position: -134px -1950px;
+    height: 35px;
+    width: 95px
+}
+
+.sprite-tab-war:hover,
+.active .sprite-tab-war:hover,
+.active .sprite-tab-war {
+    background-position: -136px -1695px;
+    height: 35px;
+    width: 94px
+}
+
+.sprite-tab-war {
+    background-position: -136px -1740px;
+    height: 35px;
+    width: 94px
+}
+
+.sprite-tab-news:hover,
+.active .sprite-tab-news:hover,
+.active .sprite-tab-news {
+    background-position: -136px -1785px;
+    height: 35px;
+    width: 91px
+}
+
+.sprite-tab-news {
+    background-position: -136px -1830px;
+    height: 35px;
+    width: 91px
+}
+
+.sprite-tab-all:hover,
+.active .sprite-tab-all:hover,
+.active .sprite-tab-all {
+    background-position: -134px -1995px;
+    height: 35px;
+    width: 80px
+}
+
+.sprite-tab-all {
+    background-position: -134px -2040px;
+    height: 35px;
+    width: 80px
+}
+
+.sprite-find:hover {
+    background-position: -10px -2205px !important;
+    height: 35px;
+    width: 35px
+}
+
+.sprite-bullet-drag-scroll {
+    background-position: -136px -1875px;
+    height: 25px;
+    width: 25px
+}
+
+.sprite-caibang,
+.sprite-conlon,
+.sprite-doanthi,
+.sprite-duongmon,
+.sprite-fqa-1,
+.sprite-fqa-2,
+.sprite-minhgiao,
+.sprite-ngamy,
+.sprite-ngudoc,
+.sprite-thiennhan,
+.sprite-thienvuong,
+.sprite-thieulam,
+.sprite-thuyyen,
+.sprite-vodang,
+.sprite-como {
+    background: url(http://img.zing.vn/products/wjx2/skin-2015/images/sprite-mp.png) no-repeat;
+    display: inline-block;
+    height: 221px;
+    overflow: hidden;
+    text-align: left;
+    text-indent: -9999px;
+    width: 68px
+}
+
+.sprite-caibang:hover,
+.active .sprite-caibang:hover,
+.active .sprite-caibang {
+    background-position: -10px 0
+}
+
+.off .sprite-caibang {
+    background-position: -88px 0
+}
+
+.sprite-caibang {
+    background-position: -166px 0
+}
+
+.sprite-conlon:hover,
+.active .sprite-conlon:hover,
+.active .sprite-conlon {
+    background-position: -244px 0
+}
+
+.off .sprite-conlon {
+    background-position: -322px 0
+}
+
+.sprite-conlon {
+    background-position: -400px 0
+}
+
+.sprite-doanthi:hover,
+.active .sprite-doanthi:hover,
+.active .sprite-doanthi {
+    background-position: -10px -231px
+}
+
+.off .sprite-doanthi {
+    background-position: -88px -231px
+}
+
+.sprite-doanthi {
+    background-position: -166px -231px
+}
+
+.sprite-duongmon:hover,
+.active .sprite-duongmon:hover,
+.active .sprite-duongmon {
+    background-position: -244px -231px
+}
+
+.off .sprite-duongmon {
+    background-position: -322px -231px
+}
+
+.sprite-duongmon {
+    background-position: -400px -231px
+}
+
+.off .sprite-faq-1 {
+    background-position: -10px -462px
+}
+
+.sprite-fqa-1 {
+    background-position: -166px -462px;
+    cursor: default
+}
+
+.off .sprite-fqa-2 {
+    background-position: -322px -462px;
+    cursor: default
+}
+
+.sprite-fqa-2 {
+    background-position: -400px -462px;
+    cursor: default
+}
+
+.sprite-minhgiao:hover,
+.active .sprite-minhgiao:hover,
+.active .sprite-minhgiao {
+    background-position: -10px -693px;
+    height: 213px
+}
+
+.off .sprite-minhgiao {
+    background-position: -88px -693px;
+    height: 213px
+}
+
+.sprite-minhgiao {
+    background-position: -166px -693px;
+    height: 213px
+}
+
+.sprite-ngamy:hover,
+.active .sprite-ngamy:hover,
+.active .sprite-ngamy {
+    background-position: -244px -693px
+}
+
+.off .sprite-ngamy {
+    background-position: -322px -693px
+}
+
+.sprite-ngamy {
+    background-position: -400px -693px
+}
+
+.sprite-ngudoc:hover,
+.active .sprite-ngudoc:hover,
+.active .sprite-ngudoc {
+    background-position: -10px -916px
+}
+
+.off .sprite-ngudoc {
+    background-position: -88px -916px
+}
+
+.sprite-ngudoc {
+    background-position: -166px -916px
+}
+
+.sprite-thiennhan:hover,
+.active .sprite-thiennhan:hover,
+.active .sprite-thiennhan {
+    background-position: -244px -924px
+}
+
+.off .sprite-thiennhan {
+    background-position: -322px -924px
+}
+
+.sprite-thiennhan {
+    background-position: -400px -924px
+}
+
+.sprite-thienvuong:hover,
+.active .sprite-thienvuong:hover,
+.active .sprite-thienvuong {
+    background-position: -10px -1147px
+}
+
+.off .sprite-thienvuong {
+    background-position: -88px -1147px
+}
+
+.sprite-thienvuong {
+    background-position: -166px -1147px
+}
+
+.sprite-thieulam:hover,
+.active .sprite-thieulam:hover,
+.active .sprite-thieulam {
+    background-position: -244px -1155px
+}
+
+.off .sprite-thieulam {
+    background-position: -322px -1155px
+}
+
+.sprite-thieulam {
+    background-position: -400px -1155px
+}
+
+.sprite-thuyyen:hover,
+.active .sprite-thuyyen:hover,
+.active .sprite-thuyyen {
+    background-position: -10px -1378px
+}
+
+.off .sprite-thuyyen {
+    background-position: -88px -1378px
+}
+
+.sprite-thuyyen {
+    background-position: -166px -1378px
+}
+
+.sprite-vodang:hover,
+.active .sprite-vodang:hover,
+.active .sprite-vodang {
+    background-position: -244px -1386px
+}
+
+.off .sprite-vodang {
+    background-position: -322px -1386px
+}
+
+.sprite-vodang {
+    background-position: -400px -1386px
+}
+
+.sprite-como:hover,
+.active .sprite-como:hover,
+.active .sprite-como {
+    background-position: -10px -1610px
+}
+
+.off .sprite-como {
+    background-position: -88px -1609px
+}
+
+.sprite-como {
+    background-position: -166px -1609px
+}
+
+.sprite-hotline,
+.sprite-qrcode {
+    background: url(http://img.zing.vn/products/wjx2/skin-2015/images/sprite-uti.png) no-repeat;
+    display: inline-block;
+    overflow: hidden;
+    text-align: left;
+    text-indent: -9999px
+}
+
+.sprite-hotline {
+    background-position: -5px 0;
+    height: 135px;
+    width: 230px
+}
+
+.sprite-qrcode {
+    background-position: -5px -140px;
+    height: 175px;
+    width: 230px
+}
+
+.sprite-title-feature,
+.sprite-title-timeline,
+.sprite-title-relate-news {
+    background: url(http://img.zing.vn/products/wjx2/skin-2015/images/sprite-title.png) no-repeat;
+    display: inline-block;
+    overflow: hidden;
+    text-align: left;
+    text-indent: -9999px
+}
+
+.sprite-title-feature {
+    background-position: -5px 0;
+    height: 30px;
+    width: 215px
+}
+
+.sprite-title-timeline {
+    background-position: -5px -35px;
+    height: 25px;
+    width: 187px
+}
+
+.sprite-title-relate-news {
+    background-position: -5px -65px;
+    height: 25px;
+    width: 144px
+}
+
+.qrcode,
+.qrcode-apk-nor,
+.qrcode-apk-over,
+.qrcode-app-nor,
+.qrcode-app-over,
+.qrcode-gplay-nor,
+.qrcode-gplay-over {
+    background: url(http://img.zing.vn/products/wjx2/skin-2015/images/sprite-qrcode.jpg) no-repeat;
+    display: inline-block;
+    overflow: hidden;
+    text-align: left
+}
+
+.qrcode {
+    background-position: -5px 0;
+    height: 215px;
+    width: 230px
+}
+
+.qrcode-apk-nor {
+    background-position: -5px -220px;
+    height: 50px;
+    text-indent: -9999px;
+    width: 50px
+}
+
+.qrcode-apk-over {
+    background-position: -60px -220px;
+    height: 50px;
+    text-indent: -9999px;
+    width: 50px
+}
+
+.qrcode-app-nor {
+    background-position: -115px -220px;
+    height: 50px;
+    text-indent: -9999px;
+    width: 50px
+}
+
+.qrcode-app-over {
+    background-position: -170px -220px;
+    height: 50px;
+    text-indent: -9999px;
+    width: 50px
+}
+
+.qrcode-gplay-nor {
+    background-position: -5px -275px;
+    height: 50px;
+    text-indent: -9999px;
+    width: 50px
+}
+
+.qrcode-gplay-over {
+    background-position: -60px -275px;
+    height: 50px;
+    text-indent: -9999px;
+    width: 50px
+}
+
+body {
+    background-color: #efefef;
+    font-family: arial, tahoma
+}
+
+.wrapper {
+    margin: 0 auto;
+    overflow: hidden;
+    width: 1000px
+}
+
+.wrap-header,
+.wrap-footer {
+    background: url(../images/bg-header2.jpg) no-repeat scroll center top;
+    overflow: hidden
+}
+
+.wrap-footer {
+    background: url(http://img.zing.vn/products/wjx2/skin-2015/images/bg-footer.jpg) no-repeat scroll center bottom
+}
+
+#header {
+    height: 440px;
+    overflow: hidden;
+    width: 100%
+}
+
+div#popup-social-home {
+    top: 105px !important
+}
+
+.frm-navigate {
+    margin: 0 auto;
+    position: relative;
+    width: 1000px
+}
+
+.frm-navigate>ul.nav-top {
+    height: 76px;
+    margin: 0 auto;
+    width: 846px
+}
+
+.frm-navigate>ul.nav-top>li {
+    display: inline-block;
+    float: left;
+    line-height: 43px;
+    position: relative
+}
+
+.frm-navigate>ul.nav-top>li>a {
+    float: left;
+    margin-top: 35px
+}
+
+.frm-navigate>ul.nav-top>li>a.logo {
+    background: url(../images/logo.png) no-repeat scroll 0 center;
+    font-size: 0;
+    height: 148px;
+    margin: 0;
+    position: relative;
+    top: -5px;
+    width: 148px
+}
+
+.frm-navigate>ul.nav-top>li:hover ul.subnav-top {
+    display: block
+}
+
+.frm-navigate>ul.nav-top>li ul.subnav-top {
+    background: #fff;
+    border-top: 3px solid #009c75;
+    display: none;
+    left: 50%;
+    margin-left: -85px;
+    position: absolute;
+    top: 75px;
+    width: 170px;
+    z-index: 3
+}
+
+.frm-navigate>ul.nav-top>li ul.subnav-top li {
+    background: url(http://img.zing.vn/products/wjx2/skin-2015/images/underline-subnav.png) no-repeat scroll center center;
+    display: block;
+    overflow: hidden
+}
+
+.frm-navigate>ul.nav-top>li ul.subnav-top li a {
+    color: #5e5e5e;
+    display: inline-block;
+    font-size: 14px;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 28px;
+    text-transform: capitalize;
+    width: 100%
+}
+
+.frm-navigate>ul.nav-top>li ul.subnav-top li a:hover {
+    text-decoration: underline
+}
+
+.frm-navigate>ul.nav-top>li ul.subnav-top li:last-child {
+    background: url(http://img.zing.vn/products/wjx2/skin-2015/images/bullet-subnav.png) no-repeat scroll 15px center
+}
+
+.frm-navigate>ul.nav-top>li ul.subnav-top li.off a {
+    cursor: default;
+    opacity: .5
+}
+
+.frm-navigate>ul.nav-top>li ul.subnav-top li.off a:hover {
+    text-decoration: none
+}
+
+.frm-navigate>ul.nav-top>li ul.subnav-top li.active a,
+.frm-navigate>ul.nav-top>li ul.subnav-top li.Hilite a {
+    text-decoration: underline
+}
+
+.frm-navigate>.trailer {
+    height: 266px;
+    left: 485px;
+    overflow: hidden;
+    position: absolute;
+    top: 125px;
+    width: 480px
+}
+
+.frm-navigate>.trailer>#trailer__flash {
+    position: absolute;
+    z-index: 1
+}
+
+.frm-navigate>.trailer>#trailer__play {
+    background: url(http://img.zing.vn/products/wjx2/skin-2015/images/video-header-bg.png) no-repeat;
+    display: block;
+    height: 266px;
+    position: absolute;
+    width: 480px;
+    z-index: 2
+}
+
+#main>.wrapper {
+    left: 20px;
+    position: relative
+}
+
+#main>.wrapper>div {
+    float: left
+}
+
+#main .left-main {
+    margin-right: 10px;
+    overflow: hidden;
+    width: 230px
+}
+
+#main .left-main .box-feature {
+    overflow: hidden
+}
+
+#main .left-main .sprite-regis,
+#main .left-main .sprite-payment {
+    float: left;
+    margin-top: -3px
+}
+
+#main .left-main ul.left-nav {
+    clear: both
+}
+
+#main .left-main ul.left-nav li a {
+    display: block
+}
+
+#main .left-main .block-search {
+    margin: 10px 0;
+    width: 100%
+}
+
+#main .left-main .block-search form.form-search {
+    background: url(http://img.zing.vn/products/wjx2/skin-2015/images/bg-find.png) no-repeat scroll 0 center;
+    height: 35px;
+    width: 230px
+}
+
+#main .left-main .block-search form.form-search input[type=text] {
+    background: 0 0;
+    border: medium;
+    color: #525252;
+    float: left;
+    font-size: 15px;
+    font-style: italic;
+    height: 35px;
+    outline: medium;
+    padding: 0 15px;
+    width: 165px
+}
+
+#main .left-main .block-search form.form-search button[type=submit] {
+    background-position: -1000px -22050px;
+    border: medium;
+    cursor: pointer;
+    float: left;
+    font-size: 0;
+    height: 35px;
+    width: 35px
+}
+
+#main .left-main .feature-daily {
+    height: 356px;
+    overflow: hidden
+}
+
+#main .left-main .feature-daily #tabDate {
+    background-color: #262626;
+    height: 30px;
+    overflow: hidden;
+    width: 100%
+}
+
+#main .left-main .feature-daily #tabDate>li {
+    float: left
+}
+
+#main .left-main .feature-daily #tabDate>li>a {
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+    color: #e1e3e3;
+    display: block;
+    font-size: 15px;
+    line-height: 1.42857;
+    line-height: 30px;
+    text-align: center;
+    text-decoration: none;
+    width: 30px
+}
+
+#main .left-main .feature-daily #tabDate>li>a:hover {
+    text-decoration: underline
+}
+
+#main .left-main .feature-daily #tabDate>li.active a,
+#main .left-main .feature-daily #tabDate>li.active:hover a {
+    color: #00d0a7
+}
+
+#main .left-main .feature-daily .tab-content {
+    background-color: #fff;
+    height: 290px;
+    width: 230px
+}
+
+#main .left-main .feature-daily .tab-content .jspVerticalBar {
+    right: 0;
+    top: 2px;
+    width: 20px
+}
+
+#main .left-main .feature-daily .tab-content .jspVerticalBar .jspDrag {
+    background: url(http://img.zing.vn/products/wjx2/skin-2015/images/bullet-drag-scroll-small.png) no-repeat scroll 0 0
+}
+
+#main .left-main .feature-daily table.list-feature {
+    width: 100%
+}
+
+#main .left-main .feature-daily table.list-feature tr,
+#main .left-main .feature-daily table.list-feature td {
+    border-bottom: 1px solid #cdcdcd;
+    color: #665a3c;
+    font-size: 12px
+}
+
+#main .left-main .feature-daily table.list-feature tr.active a,
+#main .left-main .feature-daily table.list-feature tr.active span {
+    color: #6d5722 !important
+}
+
+#main .left-main .feature-daily table.list-feature td.duration {
+    color: #595959;
+    padding: 8px 0;
+    text-align: center;
+    width: 30%
+}
+
+#main .left-main .feature-daily table.list-feature td.duration>span {
+    margin-left: 5px
+}
+
+#main .left-main .feature-daily table.list-feature td.subject {
+    border: none !important;
+    display: block
+}
+
+#main .left-main .feature-daily table.list-feature td.subject>a,
+#main .left-main .feature-daily table.list-feature td.subject>span {
+    color: #000;
+    display: block;
+    padding-left: 10px;
+    text-decoration: none;
+    vertical-align: middle
+}
+
+#main .left-main .feature-daily table.list-feature td.subject>a:hover,
+#main .left-main .feature-daily table.list-feature td.subject>span:hover {
+    text-decoration: underline
+}
+
+#main .left-main .qrcode {
+    margin-top: 20px
+}
+
+#main .left-main .qrcode>a.qrcode-scan {
+    float: left;
+    margin: 44px 20px 0 10px;
+    text-indent: 0
+}
+
+#main .left-main .qrcode>a.qrcode-scan img {
+    height: 135px;
+    width: 135px
+}
+
+#main .left-main .qrcode>a.qrcode-app {
+    background: url(http://img.zing.vn/products/wjx2/skin-2015/images/sprite-qrcode.jpg) no-repeat;
+    background-position: -115px -220px;
+    display: inline-block;
+    height: 50px;
+    margin-top: 44px;
+    overflow: hidden;
+    text-align: left;
+    text-indent: -9999px;
+    width: 50px
+}
+
+#main .left-main .qrcode>a.qrcode-app:hover {
+    background: url(http://img.zing.vn/products/wjx2/skin-2015/images/sprite-qrcode.jpg) no-repeat;
+    background-position: -170px -220px;
+    display: inline-block;
+    height: 50px;
+    overflow: hidden;
+    text-align: left;
+    text-indent: -9999px;
+    width: 50px
+}
+
+#main .left-main .qrcode>a.qrcode-gplay {
+    background: url(http://img.zing.vn/products/wjx2/skin-2015/images/sprite-qrcode.jpg) no-repeat;
+    background-position: -5px -275px;
+    display: inline-block;
+    height: 50px;
+    margin-top: 2px;
+    overflow: hidden;
+    text-align: left;
+    text-indent: -9999px;
+    width: 50px
+}
+
+#main .left-main .qrcode>a.qrcode-gplay:hover {
+    background: url(http://img.zing.vn/products/wjx2/skin-2015/images/sprite-qrcode.jpg) no-repeat;
+    background-position: -60px -275px;
+    display: inline-block;
+    height: 50px;
+    overflow: hidden;
+    text-align: left;
+    text-indent: -9999px;
+    width: 50px
+}
+
+#main .left-main .qrcode>a.qrcode-apk {
+    background: url(http://img.zing.vn/products/wjx2/skin-2015/images/sprite-qrcode.jpg) no-repeat;
+    background-position: -5px -220px;
+    display: inline-block;
+    height: 50px;
+    margin-top: 2px;
+    overflow: hidden;
+    text-align: left;
+    text-indent: -9999px;
+    width: 50px
+}
+
+#main .left-main .qrcode>a.qrcode-apk:hover {
+    background: url(http://img.zing.vn/products/wjx2/skin-2015/images/sprite-qrcode.jpg) no-repeat;
+    background-position: -60px -220px;
+    display: inline-block;
+    height: 50px;
+    overflow: hidden;
+    text-align: left;
+    text-indent: -9999px;
+    width: 50px
+}
+
+#main .tab-pane {
+    display: none
+}
+
+#main .tab-pane.active {
+    display: block
+}
+
+#main .tab-pane>ul li {
+    display: inline-block
+}
+
+#main .right-main {
+    width: 720px
+}
+
+#main .right-main p.pub-time {
+    background: url(http://img.zing.vn/products/wjx2/skin-2015/images/bg-times.png) no-repeat scroll center center;
+    color: #606060;
+    float: right;
+    font-size: 13px;
+    height: 41px;
+    line-height: 22px;
+    margin-right: 15px;
+    text-align: left;
+    width: 41px
+}
+
+#main .right-main .main-banner {
+    height: 230px;
+    margin-bottom: 20px;
+    width: 100%
+}
+
+#main .right-main #block-news {
+    margin-bottom: 11px;
+    width: 100%
+}
+
+#main .right-main #block-news .tab-panel {
+    background-color: #fff;
+    border: 1px solid #e3e3e3;
+    border-top: 0;
+    overflow: hidden;
+    padding-top: 18px
+}
+
+#main .right-main #block-news .tab-panel .first-content {
+    cursor: pointer;
+    float: left;
+    margin-right: 15px;
+    width: 360px
+}
+
+#main .right-main #block-news .tab-panel .first-content .title-content {
+    margin-bottom: 10px;
+    overflow: hidden;
+    padding-left: 15px;
+    width: 100%
+}
+
+#main .right-main #block-news .tab-panel .first-content .title-content a.subject {
+    color: #141414;
+    display: inline-block;
+    float: left;
+    font-size: 20px;
+    line-height: 25px;
+    text-decoration: none;
+    width: 300px
+}
+
+#main .right-main #block-news .tab-panel .first-content .title-content a.subject:hover {
+    text-decoration: underline
+}
+
+#main .right-main #block-news .tab-panel .first-content .subject-img {
+    display: block;
+    margin-bottom: 15px;
+    overflow: hidden;
+    padding-left: 15px
+}
+
+#main .right-main #block-news .tab-panel .first-content .subject-img>img {
+    border: 1px solid #bababa
+}
+
+#main .right-main #block-news .tab-panel .first-content p.short-content {
+    color: #000;
+    font-size: 14px;
+    line-height: 25px;
+    padding-left: 15px;
+    text-align: justify
+}
+
+#main .right-main #block-news .tab-panel .first-content a.btn-more {
+    background: url(http://img.zing.vn/products/wjx2/skin-2015/images/bg-btn-more.jpg) no-repeat scroll 0 0;
+    clear: both;
+    color: #d0d0d0;
+    display: block;
+    float: right;
+    height: 30px;
+    line-height: 28px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    text-align: center;
+    text-decoration: none;
+    width: 95px
+}
+
+#main .right-main #block-news .tab-panel .first-content a.btn-more:hover {
+    background-position: 0 -30px
+}
+
+#main .right-main #block-news .tab-panel .block-list {
+    float: left;
+    height: 365px;
+    margin-bottom: 15px;
+    width: 340px
+}
+
+#main .right-main #block-news .tab-panel .block-list ul.list-item li {
+    border-bottom: 1px solid #d0d0d0;
+    padding: 0 5px;
+    width: 90%
+}
+
+#main .right-main #block-news .tab-panel .block-list ul.list-item li a {
+    color: #000;
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 5px 0;
+    text-decoration: none
+}
+
+#main .right-main #block-news .tab-panel .block-list ul.list-item li a>.sign-cate {
+    color: #006043;
+    display: block;
+    font-size: 12px;
+    font-weight: bolder;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    width: 100%
+}
+
+#main .right-main #block-news .tab-panel .block-list ul.list-item li a>.sign-shortContent {
+    display: none
+}
+
+#main .right-main #block-news .tab-panel .block-list ul.list-item li a:hover span {
+    text-decoration: underline
+}
+
+#main .right-main #block-news .tab-panel .block-list ul.list-item li a.hot>.sign-title {
+    color: #066c36;
+    font-weight: bolder
+}
+
+#main .right-main #block-news .tab-panel .block-list ul.list-item li.active {
+    background-color: #009d7e
+}
+
+#main .right-main #block-news .tab-panel .block-list ul.list-item li.active:hover,
+#main .right-main #block-news .tab-panel .block-list ul.list-item li.active:hover span {
+    text-decoration: none
+}
+
+#main .right-main #block-news .tab-panel .block-list ul.list-item li.active a>span,
+#main .right-main #block-news .tab-panel .block-list ul.list-item li.active a.hot>.sign-title {
+    color: #fff !important
+}
+
+#main .right-main #timeline-event {
+    margin-bottom: 20px;
+    overflow: hidden
+}
+
+#main .right-main #timeline-event>div {
+    border-bottom: 1px solid #979797;
+    padding-bottom: 4px;
+    text-indent: 0;
+    width: 100%
+}
+
+#main .right-main #timeline-event>div>a {
+    color: #262626;
+    display: block;
+    float: right;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 25px;
+    margin-right: 5px;
+    text-decoration: none
+}
+
+#main .right-main #timeline-event>div>a:hover {
+    text-decoration: underline
+}
+
+#main .right-main #timeline-event ul {
+    padding: 6px
+}
+
+#main .right-main #timeline-event ul li a {
+    display: inline-block;
+    float: left;
+    margin: 0 2px
+}
+
+#main .right-main #block-forum {
+    float: left;
+    height: 240px;
+    overflow: hidden;
+    width: 480px
+}
+
+#main .right-main #block-forum .tab-content-ul {
+    background-color: #fff;
+    height: 205px;
+    padding-top: 10px
+}
+
+#main .right-main #block-forum .tab-content-ul ul {
+    width: 100%
+}
+
+#main .right-main #block-forum .tab-content-ul ul li {
+    border-bottom: 1px solid #b2b2b2;
+    line-height: 20px;
+    margin: 0 10px;
+    width: 96%
+}
+
+#main .right-main #block-forum .tab-content-ul ul li a {
+    color: #000;
+    display: block;
+    font-size: 14px;
+    padding: 4px 0;
+    text-decoration: none;
+    width: 100%
+}
+
+#main .right-main #block-forum .tab-content-ul ul li a:hover {
+    text-decoration: underline
+}
+
+#main .right-main #block-forum .tab-content-ul ul li a .sign-cate {
+    display: none
+}
+
+#main .right-main #block-forum .tab-content-ul ul li a .sign-title {
+    display: block;
+    font-weight: 700;
+    width: 100%
+}
+
+#main .right-main #block-forum .tab-content-ul ul li p {
+    font-weight: 400
+}
+
+#main .right-main #block-forum .tab-content-ul ul li:last-child {
+    border: 0
+}
+
+#main .right-main #block-forum .tab-content-ul #tabFB ul li {
+    line-height: inherit;
+    margin: 0 10px
+}
+
+#main .right-main #block-forum .tab-content-ul #tabFB ul li a {
+    line-height: 21px;
+    padding: 6px 0
+}
+
+#main .right-main #block-forum .tab-content-ul #tabFB ul li:last-child {
+    border: 0
+}
+
+#block-utilities {
+    float: left;
+    margin-left: 10px;
+    width: 230px
+}
+
+#block-utilities .btn-thuvien {
+    background: url(http://img.zing.vn/products/wjx2/skin-2015/images/btn-thuvien.png) no-repeat;
+    display: block;
+    height: 95px;
+    overflow: hidden;
+    text-indent: -9999px;
+    width: 230px
+}
+
+#block-utilities .btn-thuvien:hover {
+    background-position: 0 -95px
+}
+
+#block-utilities .sprite-hotline {
+    margin-top: 8px
+}
+
+#tab-cate ul {
+    border-bottom: 1px solid #262626;
+    height: 34px
+}
+
+#tab-cate ul li {
+    float: left;
+    position: relative
+}
+
+#tab-cate ul li a {
+    background: url(http://img.zing.vn/products/wjx2/skin-2015/images/bg-tab-news.png) repeat scroll 0 0;
+    border-right: 1px solid #565656;
+    color: #fff;
+    float: left;
+    font-family: Arial;
+    font-size: 16px;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 15px;
+    text-decoration: none;
+    text-transform: uppercase
+}
+
+#tab-cate ul li a:hover {
+    background-position: 0 -35px
+}
+
+#tab-cate ul li a:last-child {
+    background: 0;
+    border: 0
+}
+
+#tab-cate ul li a.readmore {
+    background: 0;
+    border: 0;
+    color: #262626;
+    display: block;
+    float: right;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 35px;
+    margin-right: 5px;
+    text-decoration: none;
+    text-transform: none
+}
+
+#tab-cate ul li a.readmore:hover {
+    text-decoration: underline
+}
+
+#tab-cate ul li>.ico-act-tab {
+    bottom: -7px
+}
+
+#tab-cate ul li:hover .ico-act-tab {
+    display: block
+}
+
+#tab-cate ul li.active a {
+    background-position: 0 -35px
+}
+
+#tab-cate ul li:last-child {
+    float: none
+}
+
+li.last-child {
+    float: right !important
+}
+
+#footer {
+    height: 345px
+}
+
+#footer #block-character {
+    margin: 21px 24px;
+    overflow: hidden;
+    width: 960px
+}
+
+#footer #block-character>ul {
+    width: 100%
+}
+
+#footer #block-character>ul li {
+    float: left
+}
+
+#footer #block-character>ul li a {
+    float: left
+}
+
+#footer .info-company {
+    margin: 30px auto 0;
+    width: 785px
+}
+
+#footer .info-company a {
+    display: block;
+    float: left;
+    font-size: 0
+}
+
+#footer .info-company a.VNG {
+    height: 53px;
+    margin-left: 10px;
+    width: 36px
+}
+
+#footer .info-company a.KingSoft {
+    height: 22px;
+    margin-left: 20px;
+    margin-top: 15px;
+    width: 92px
+}
+
+#footer .info-company p {
+    color: #d4d4d4;
+    float: left;
+    font-size: 13px;
+    line-height: 20px;
+    margin-left: 25px;
+    margin-top: 5px;
+    width: 594px
+}
+
+.ie8 #main .left-main .block-search form.form-search input[type=text] {
+    line-height: 40px
+}
+
+#subpage .off {
+    cursor: default
+}
+
+#subpage #header {
+    height: auto;
+    margin-bottom: 200px;
+    overflow: visible;
+    padding-bottom: 100px
+}
+
+#subpage .wrap-footer {
+    background-image: url(http://img.zing.vn/products/wjx2/skin-2015/images/subp-bg-footer.jpg)
+}
+
+#subpage #footer {
+    height: 230px
+}
+
+#subpage #footer .info-company {
+    margin: 155px auto 0
+}
+
+#subpage #main .left-main {
+    overflow: visible;
+    position: relative
+}
+
+#subpage #main .left-main .block-search {
+    background-color: #000;
+    margin: 0;
+    padding: 5px 0
+}
+
+#subpage #main .left-main ul.left-nav {
+    overflow: hidden;
+    width: 100%
+}
+
+#subpage #main .left-main ul.left-nav>li {
+    background: url(http://img.zing.vn/products/wjx2/skin-2015/images/bg-subp-sidebar.jpg) repeat scroll center top;
+    border-bottom: 1px solid #484848
+}
+
+#subpage #main .left-main ul.left-nav>li>a {
+    color: #eaeaea;
+    display: block;
+    font-size: 15px;
+    line-height: 25px;
+    padding: 10px 0 10px 15px;
+    text-decoration: none;
+    text-transform: uppercase
+}
+
+#subpage #main .left-main ul.left-nav>li>a>span.ico-exand {
+    background: url(http://img.zing.vn/products/wjx2/skin-2015/images/ico-nav-subpage.png) no-repeat scroll 0 0;
+    display: block;
+    float: right;
+    height: 20px;
+    margin-right: 15px;
+    width: 19px
+}
+
+#subpage #main .left-main ul.left-nav>li>a:hover {
+    color: #06d2aa
+}
+
+#subpage #main .left-main ul.left-nav>li>a:hover span {
+    background-position: 0 -20px;
+    margin-top: 5px
+}
+
+#subpage #main .left-main ul.left-nav>li.active>a {
+    color: #06d2aa
+}
+
+#subpage #main .left-main ul.left-nav>li.active>a span {
+    background-position: 0 -20px;
+    margin-top: 5px
+}
+
+#subpage #main .left-main ul.left-nav>li.active ul.sub {
+    display: block
+}
+
+#subpage #main .left-main ul.left-nav>li>ul.sub {
+    background-color: #fff;
+    display: none
+}
+
+#subpage #main .left-main ul.left-nav>li>ul.sub>li {
+    padding: 10px 0
+}
+
+#subpage #main .left-main ul.left-nav>li>ul.sub>li>a {
+    background: url(http://img.zing.vn/products/wjx2/skin-2015/images/bullet-subpage-nav.png) no-repeat scroll 10px center;
+    color: #464646;
+    font-size: 15px;
+    padding-left: 25px;
+    text-decoration: none
+}
+
+#subpage #main .left-main ul.left-nav>li>ul.sub>li>a:hover {
+    text-decoration: underline
+}
+
+#subpage #main .left-main ul.left-nav>li>ul.sub>li:nth-child(even) {
+    background-color: #f4f4f4
+}
+
+#subpage #main .left-main ul.left-nav>li>ul.sub>li.off>a {
+    opacity: .5
+}
+
+#subpage #main .left-main ul.left-nav>li>ul.sub>li.off>a:hover {
+    text-decoration: none
+}
+
+#subpage #main .left-main ul.left-nav>li>ul.sub>li.active>a {
+    text-decoration: underline
+}
+
+#subpage #main .left-main ul.left-nav>li.off>a {
+    opacity: .5
+}
+
+#subpage #main .left-main ul.left-nav>li.off>a:hover {
+    color: #eaeaea;
+    text-decoration: none
+}
+
+#subpage #main .left-main ul.left-nav>li.off>a:hover span {
+    background-position: 0 0;
+    margin-top: 0
+}
+
+#subpage #main .left-main #block-utilities {
+    margin-bottom: 10px;
+    margin-left: 0
+}
+
+#subpage #main .left-main #block-utilities a {
+    margin: 10px 0 0
+}
+
+#subpage #main .left-main #block-relate-news {
+    background-color: #fff;
+    margin-top: 10px;
+    width: 230px
+}
+
+#subpage #main .left-main #block-relate-news .block-list {
+    border-top: 1px solid #a1a1a1;
+    float: left;
+    margin-bottom: 15px;
+    overflow: hidden;
+    width: 100%
+}
+
+#subpage #main .left-main #block-relate-news .block-list ul.list-item {
+    background-color: #fff
+}
+
+#subpage #main .left-main #block-relate-news .block-list ul.list-item li {
+    border-bottom: 1px solid #d0d0d0;
+    padding: 0 5px
+}
+
+#subpage #main .left-main #block-relate-news .block-list ul.list-item li a {
+    color: #000;
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 5px 0;
+    text-decoration: none
+}
+
+#subpage #main .left-main #block-relate-news .block-list ul.list-item li a>.sign-cate {
+    color: #006043;
+    display: block;
+    font-size: 12px;
+    font-weight: bolder;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    width: 100%
+}
+
+#subpage #main .left-main #block-relate-news .block-list ul.list-item li a>.sign-shortContent {
+    display: none
+}
+
+#subpage #main .left-main #block-relate-news .block-list ul.list-item li.active,
+#subpage #main .left-main #block-relate-news .block-list ul.list-item li:hover {
+    background-color: #009d7e
+}
+
+#subpage #main .left-main #block-relate-news .block-list ul.list-item li.active a>span,
+#subpage #main .left-main #block-relate-news .block-list ul.list-item li:hover a>span {
+    color: #fff
+}
+
+#subpage #main .right-main {
+    background-color: #fff;
+    min-height: 1200px;
+    overflow: hidden
+}
+
+#subpage #main .right-main>.bread {
+    margin-left: 20px
+}
+
+#subpage #main .right-main p.pub-time {
+    margin-top: 0;
+    padding: 0
+}
+
+#subpage #main .right-main #content p.pub-time {
+    margin-right: 0
+}
+
+#subpage #main .right-main #content p.pub-time.first {
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+#subpage #main .right-main #block-news>#tab-cate {
+    clear: both;
+    margin-top: 20px;
+    padding: 0 20px 10px
+}
+
+#subpage #main .right-main #block-news>#tab-cate ul li a {
+    background: url(http://img.zing.vn/products/wjx2/skin-2015/images/content/bg-tab-nor.png) repeat-x scroll 0 0;
+    border-right: 1px solid #565656;
+    color: #e8e8e8;
+    display: inline-block;
+    font-size: 16px;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 20px;
+    text-decoration: none;
+    text-transform: uppercase
+}
+
+#subpage #main .right-main #block-news>#tab-cate ul li a:hover {
+    background: url(http://img.zing.vn/products/wjx2/skin-2015/images/content/bg-tab-hv.png) repeat-x scroll 0 0
+}
+
+#subpage #main .right-main #block-news>#tab-cate ul li:last-child {
+    float: left
+}
+
+#subpage #main .right-main #block-news>#tab-cate ul li.active a {
+    background: url(http://img.zing.vn/products/wjx2/skin-2015/images/content/bg-tab-hv.png) repeat-x scroll 0 0
+}
+
+#subpage #main .right-main #block-news .tab-panel {
+    border: 0;
+    clear: both
+}
+
+#subpage #main .right-main #block-news .tab-panel .list-news {
+    height: auto;
+    width: 100%
+}
+
+#subpage #main .right-main #block-news .tab-panel .list-news>ul {
+    padding: 0 20px
+}
+
+#subpage #main .right-main #block-news .tab-panel .list-news>ul>li {
+    width: 98%
+}
+
+#subpage #main .right-main #block-news .tab-panel .list-news>ul>li>a {
+    display: inline-block;
+    line-height: 30px
+}
+
+#subpage #main .right-main #block-news .tab-panel .list-news>ul>li>a>span.sign-cate {
+    display: inline-block;
+    width: 90px
+}
+
+#subpage #main .right-main #block-news .tab-panel .list-news>ul>li>a>span.sign-cate.feature {
+    color: #48749c
+}
+
+#subpage #main .right-main #block-news .tab-panel .list-news>ul>li>a>span.sign-cate.war {
+    color: #930e0e
+}
+
+#subpage #main .right-main #block-news .tab-panel .list-news>ul>li>a:hover {
+    text-decoration: underline
+}
+
+#subpage #main .right-main #block-news .tab-panel .list-news>ul>li span.sign-time {
+    color: #747a88;
+    display: inline-block;
+    float: right;
+    font-size: 14px;
+    margin-top: 10px
+}
+
+#subpage #main .right-main #block-news .tab-panel .list-library {
+    height: auto;
+    width: 100%
+}
+
+#subpage #main .right-main #block-news .tab-panel .list-library>ul {
+    padding: 0 20px
+}
+
+#subpage #main .right-main #block-search {
+    clear: both;
+    margin-top: 10px;
+    overflow: hidden;
+    padding: 0 20px
+}
+
+#subpage #main .right-main #block-search #search-info {
+    background: url(http://img.zing.vn/products/wjx2/skin-2015/images/line-news.jpg) repeat-x scroll center bottom;
+    color: #971313;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 35px;
+    padding-bottom: 8px;
+    text-transform: uppercase
+}
+
+#subpage #main .right-main #block-search #searchList {
+    font-size: 13px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    width: 100%
+}
+
+#subpage #main .right-main #block-search #searchList li {
+    border-bottom: 1px solid #bec2c6;
+    color: #b2a68c;
+    display: block;
+    font-weight: 400;
+    height: auto;
+    line-height: 25px;
+    list-style: outside none none;
+    margin-bottom: 10px;
+    overflow: hidden;
+    padding-bottom: 10px;
+    position: relative
+}
+
+#subpage #main .right-main #block-search #searchList li a {
+    color: #151515;
+    display: block;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 0 0 5px;
+    text-decoration: none
+}
+
+#subpage #main .right-main #block-search #searchList li a>span.Date {
+    color: #464646;
+    float: right;
+    font-size: 14px;
+    font-style: italic
+}
+
+#subpage #main .right-main #block-search #searchList li a:hover {
+    color: #007b63
+}
+
+#subpage #main .right-main #block-search #searchList li .short-content {
+    color: #464646;
+    font-size: 14px;
+    line-height: 23px
+}
+
+#subpage #main .right-main a.btn-top-page {
+    background: url(http://img.zing.vn/products/wjx2/skin-2015/images/btn-top.jpg) no-repeat scroll center 0;
+    display: block;
+    font-size: 0;
+    height: 35px;
+    width: 35px
+}
+
+#subpage #main .right-main a.btn-top-page:hover {
+    background-position: 0 -35px
+}
+
+#subpage #main .right-main .block-cmt {
+    margin-bottom: 20px
+}
+
+#subpage .pagination-container {
+    margin-top: 25px;
+    text-align: center;
+    width: 100%
+}
+
+#subpage .pagination-container .pagination {
+    display: inline-block;
+    margin: 0 auto;
+    overflow: hidden
+}
+
+#subpage .pagination-container .pagination li {
+    display: inline-block
+}
+
+#subpage .pagination-container .pagination li a {
+    background-color: #fff;
+    border: 1px solid #262626;
+    color: #262626;
+    display: block;
+    font-size: 12px;
+    margin: 0 2px;
+    padding: 4px 10px;
+    text-decoration: none
+}
+
+#subpage .pagination-container .pagination li a:hover {
+    background-color: #262626;
+    border: 1px solid #262626;
+    color: #fff;
+    text-decoration: none
+}
+
+#subpage .pagination-container .pagination li.active a,
+#subpage .pagination-container .pagination li.active a:hover {
+    background-color: #262626;
+    border: 1px solid #262626;
+    color: #fff;
+    text-decoration: none
+}
+
+#subpage .pagination-container .pagination li.disabled a,
+#subpage .pagination-container .pagination li.disabled a:hover {
+    background-color: #fff;
+    border: 1px solid #262626;
+    cursor: default;
+    opacity: .3
+}
+
+#subpage .pagination-container .pagination li.first a,
+#subpage .pagination-container .pagination li.last a,
+#subpage .pagination-container .pagination li.prev a,
+#subpage .pagination-container .pagination li.next a {
+    color: #262626
+}
+
+#subpage .pagination-container .pagination li.first a:hover,
+#subpage .pagination-container .pagination li.last a:hover,
+#subpage .pagination-container .pagination li.prev a:hover,
+#subpage .pagination-container .pagination li.next a:hover {
+    color: #fff
+}
+
+#subpage ul.ListEvent {
+    margin: 20px 0 0;
+    overflow: hidden
+}
+
+#subpage ul.ListEvent li {
+    border-bottom: 1px solid #bec2c6;
+    float: left;
+    margin-bottom: 20px;
+    overflow: hidden;
+    padding: 0 0 20px;
+    width: 100%
+}
+
+#subpage ul.ListEvent li a {
+    border: 1px solid transparent;
+    cursor: pointer;
+    float: left;
+    height: 80px;
+    margin-top: 5px;
+    position: relative;
+    width: 140px
+}
+
+#subpage ul.ListEvent li a:hover {
+    border-color: #00e0b4
+}
+
+#subpage ul.ListEvent li a img {
+    display: block;
+    height: 80px;
+    width: 140px
+}
+
+#subpage ul.ListEvent li .EventContent {
+    float: left;
+    margin-left: 20px;
+    overflow: hidden;
+    padding: 0;
+    width: 500px
+}
+
+#subpage ul.ListEvent li .EventContent h3 {
+    float: left;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    width: 100%
+}
+
+#subpage ul.ListEvent li .EventContent h3 a {
+    border: 0;
+    color: #151515;
+    font-size: 15px;
+    font-weight: 700;
+    height: auto;
+    text-decoration: none;
+    width: 100%
+}
+
+#subpage ul.ListEvent li .EventContent h3 a:hover {
+    color: #007b63;
+    text-decoration: none
+}
+
+#subpage ul.ListEvent li .EventContent .Date {
+    color: #747a88;
+    float: left;
+    font-size: 12px;
+    margin-top: 5px;
+    padding: 0;
+    text-align: left;
+    width: 200px
+}
+
+#subpage ul.ListEvent li .EventContent ul.ListEContent {
+    clear: both;
+    margin: 0;
+    overflow: hidden;
+    width: 100%
+}
+
+#subpage ul.ListEvent li .EventContent ul.ListEContent li {
+    border-bottom: 0;
+    float: left;
+    font-size: 15px;
+    height: auto;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 100%
+}
+
+#subpage ul.ListEvent li .EventContent ul.ListEContent li a {
+    border: 0;
+    color: #595959;
+    height: auto;
+    padding: 0 0 0 10px;
+    text-decoration: none;
+    width: 100%
+}
+
+#subpage ul.ListEvent li .EventContent ul.ListEContent li a:hover {
+    text-decoration: underline
+}
+
+#subpage ul.ListEvent li .EventContent .EShortContent {
+    clear: both;
+    color: #464646;
+    font-size: 15px;
+    line-height: 19px;
+    padding-top: 10px;
+    width: 100%
+}
+
+#subpage ul.ListEvent li.last {
+    border-bottom: 0
+}
+
+#subpage ul.ListEvent li:hover>a {
+    border-color: #00e0b4
+}
+
+#subpage ul.ListEvent li:hover .EventContent h3 a {
+    color: #007b63
+}
+
+#subpage .page-title {
+    border-left: 3px solid #00ae8c;
+    clear: both;
+    color: #141414;
+    display: block;
+    float: left;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    margin-top: 20px;
+    padding: 0 0 0 10px;
+    width: 80%
+}
+
+#subpage .page-header {
+    text-align: center;
+    clear: both;
+    color: tomato;
+    display: block;
+    float: left;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 32px;
+    margin-top: 20px;
+    width: 80%
+}
+
+#subpage ul#breadcrumbs {
+    height: 30px;
+    margin: 10px 0 0;
+    overflow: hidden;
+    padding: 5px 0;
+    text-align: left
+}
+
+#subpage ul#breadcrumbs li {
+    display: inline-block;
+    float: left;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: left;
+    white-space: nowrap
+}
+
+#subpage ul#breadcrumbs li a {
+    color: #464646;
+    padding: 0
+}
+
+#subpage ul#breadcrumbs li a span {
+    padding: 0 5px;
+    white-space: nowrap
+}
+
+#subpage ul#breadcrumbs li a:hover {
+    text-decoration: none
+}
+
+#subpage ul#breadcrumbs li span {
+    padding: 0 5px;
+    white-space: nowrap
+}
+
+#subpage ul#breadcrumbs li.active span {
+    font-weight: 700;
+    padding-left: 5px;
+    text-decoration: none
+}
+
+#subpage ul#breadcrumbs li:after {
+    content: ">"
+}
+
+#subpage ul#breadcrumbs li:last-child::after {
+    content: " "
+}
+
+#subpage .block-cmt .fb-comments {
+    margin-top: 30px;
+    text-align: center;
+    width: 100%
+}
+
+#subpage .block-cmt a.btn-view-load {
+    background: url(http://img.zing.vn/products/wjx2/skin-2015/images/ico-read-news.png) no-repeat scroll center 0;
+    clear: both;
+    display: block;
+    height: 34px;
+    margin: 0 auto;
+    text-indent: -9999px;
+    width: 600px
+}
+
+#subpage .block-cmt a.btn-view-load:hover {
+    background-position: 0 -35px
+}
+
+#subpage .follow-bar {
+    width: 230px
+}
+
+#subpage div.plugin-social-block-p,
+#subpage .template-blank {
+    border: 1px solid #f3f3f3;
+    color: #a68c4d;
+    height: 50px;
+    margin: 20px 0;
+    overflow: hidden;
+    width: 600px
+}
+
+#subpage div.plugin-social-block-p>div#popup-social-sub>div.block-social>div.share-block-social>.title {
+    background: none repeat scroll 0 0;
+    color: #464646 !important;
+    font-size: 14px !important;
+    margin-left: 5px
+}
+
+#subpage div.plugin-social-block-p span,
+#subpage div.plugin-social-block-p p {
+    padding: 0
+}
+
+#subpage .btn-fb-share-social {
+    background: url(http://img.zing.vn/eventgame/intro/general/images/bg-social-nor.jpg) repeat scroll 0 0;
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+    float: right;
+    font-family: helvetica neue, Helvetica, Arial, lucida grande, tahoma, verdana, arial, sans-serif;
+    font-weight: 700;
+    height: 28px;
+    line-height: 28px;
+    margin-top: .5px;
+    position: relative;
+    text-shadow: 0 -1px 0 #354c8c;
+    white-space: nowrap
+}
+
+#subpage .btn-fb-share-social:hover {
+    background: url(http://img.zing.vn/eventgame/intro/general/images/bg-social-hov.jpg) repeat scroll 0 0;
+    border-color: #5874c3 #4961a8 #41599f;
+    box-shadow: 0 0 1px #607fd6 inset
+}
+
+#subpage .btn-fb-share-social .pluginButtonImage {
+    display: inline-block;
+    float: left;
+    position: relative;
+    top: 3px
+}
+
+#subpage .btn-fb-share-social .pluginButtonImage .pluginButtonIcon {
+    background-image: url(http://img.zing.vn/eventgame/intro/general/images/icon.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    display: inline-block;
+    height: 17px;
+    left: 0;
+    margin: 0 4px;
+    position: relative;
+    top: 3px;
+    vertical-align: top;
+    width: 17px
+}
+
+#subpage .btn-fb-share-social .pluginButtonLabel {
+    display: block;
+    padding: 2px 10px 0 0;
+    position: relative;
+    vertical-align: top;
+    width: 62px
+}
+
+.static h1,
+.static h2,
+.static h3,
+.static h4,
+.static h5,
+.static h6 {
+    color: #009d7e;
+    line-height: 1.4
+}
+
+#content {
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 30px;
+    min-height: 500px;
+    position: relative;
+    width: 600px
+}
+
+.StaticMain {
+    clear: both;
+    overflow: hidden
+}
+
+.static a {
+    color: #1c68a6;
+    text-decoration: none
+}
+
+.static a:hover {
+    text-decoration: underline
+}
+
+.static h1.article-title {
+    color: #ff9046;
+    font-size: 24px
+}
+
+.static strong a:hover,
+.static ul li a:hover {
+    text-decoration: underline
+}
+
+.frm-relate-news h4,
+.frm-hot-news h4 {
+    color: #c6391a;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0
+}
+
+.static h2,
+.static h4 {
+    background: url(http://img.zing.vn/products/wjx2/skin-2015/images/content/ico-h4.png) no-repeat scroll 0 center;
+    font-size: 20px;
+    margin-top: 10px;
+    text-indent: 25px
+}
+
+.static h3,
+.static h5 {
+    background: url(http://img.zing.vn/products/wjx2/skin-2015/images/content/icon-5.png) no-repeat scroll 0 center;
+    color: #c6391a;
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-left: 25px;
+    text-indent: 15px
+}
+
+.static .ContentH4,
+.static .ContentBlock {
+    margin: 5px 0
+}
+
+.static .page-title {
+    color: #141414
+}
+
+.static table {
+    margin: 0 auto
+}
+
+.static table thead tr th,
+.static table tfoot tr th,
+.static table tbody tr th {
+    background-color: #007a62;
+    border: 1px solid #b2b2b2;
+    color: #fff
+}
+
+.static table tfoot tr td,
+.static table tbody tr td,
+.static table tr td {
+    border: 1px solid #31150d;
+    color: #464646;
+    padding: 5px 10px;
+    vertical-align: middle
+}
+
+.static table tfoot tr,
+.static table tbody tr,
+.static table tr {
+    background-color: #fff;
+    color: #464646
+}
+
+.static table tfoot tr:nth-child(2n+1),
+.static table tbody tr:nth-child(2n+1),
+.static table tr:nth-child(2n+1) {
+    background-color: #e4e4e4
+}
+
+.static table tfoot tr td .Icon,
+.static table tbody tr td .Icon,
+.static table tr td .Icon,
+.static table tfoot tr td .Disc,
+.static table tbody tr td .Disc,
+.static table tr td .Disc {
+    margin: 0
+}
+
+.static ul.nav-tabs {
+    border-bottom: 1px solid #98513e;
+    margin-left: 0
+}
+
+.nav.nav-tabs>li {
+    display: inline-block;
+    padding: 4px 0
+}
+
+.static .nav-tabs>li>a {
+    background: none repeat scroll 0 0 #f7f7f7;
+    font-weight: 400;
+    padding: 5px 15px;
+    text-decoration: none
+}
+
+.static .nav-tabs>li.active>a,
+.static .nav-tabs>li.active>a:hover,
+.static .nav-tabs>li>a:hover,
+.static .nav-tabs>li.active>a:focus {
+    background: none repeat scroll 0 0 #98513e;
+    border-bottom: 1px solid #98513e;
+    color: #ffdab3;
+    text-decoration: none
+}
+
+.static p,
+.static p span,
+.static ul li span,
+.static span {
+    padding: 5px 0;
+    white-space: inherit !important
+}
+
+.static .TextCenter {
+    text-align: center
+}
+
+.static .TextCenter>em {
+    display: block;
+    font-size: 13px;
+    font-style: italic;
+    margin-bottom: 20px
+}
+
+ul.Decimal {
+    margin: 0 0 10px 25px
+}
+
+ul.Decimal li {
+    list-style-type: decimal;
+    margin-bottom: 10px;
+    text-align: justify
+}
+
+ul.UpperAlpha {
+    margin: 0 0 10px 25px
+}
+
+ul.UpperAlpha li {
+    list-style-type: upper-alpha;
+    margin-bottom: 10px;
+    text-align: justify
+}
+
+ul.LowerAlpha {
+    margin: 0 0 10px 25px
+}
+
+ul.LowerAlpha li {
+    list-style-type: lower-alpha;
+    margin-bottom: 10px;
+    text-align: justify
+}
+
+ul.Icon {
+    margin: 0 0 10px 25px;
+    padding: 10px 0
+}
+
+ul.Icon li {
+    background: url(http://img.zing.vn/products/wjx2/skin-2015/images/content/icon-2.png) no-repeat scroll 0 6px;
+    list-style-type: none;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    text-align: justify
+}
+
+ul.Icon li ul.LowerAlpha li {
+    background: none repeat scroll 0 0;
+    list-style-type: lower-alpha;
+    margin-bottom: 10px;
+    padding-left: 0
+}
+
+ul.Dash {
+    margin: 0 0 10px 5px
+}
+
+ul.Dash li {
+    background: url(http://img.zing.vn/products/wjx2/skin-2015/images/content/icon-3.png) no-repeat scroll 0 10px;
+    list-style-type: none;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    text-align: justify
+}
+
+ul.Disc {
+    margin: 0 0 10px 25px;
+    padding: 10px 0
+}
+
+ul.Disc li {
+    background: url(http://img.zing.vn/products/wjx2/skin-2015/images/content/icon-3.png) no-repeat scroll 3px 9px;
+    list-style-type: none;
+    margin-bottom: 10px;
+    padding: 0 0 0 15px;
+    text-align: justify
+}
+
+ul.Decimal li ul {
+    padding-top: 5px
+}
+
+ul.UpperAlpha li ul {
+    padding-top: 5px
+}
+
+ul.LowerAlpha li ul {
+    padding-top: 5px
+}
+
+ul.Icon li ul {
+    padding-top: 5px
+}
+
+ul.Dash li ul {
+    padding-top: 5px
+}
+
+ul.Disc li ul {
+    padding-top: 5px
+}
+
+.Strong01 {
+    font-weight: bolder
+}
+
+.Strong02,
+.RedText {
+    color: red;
+    font-weight: bolder
+}
+
+.TextFont15 {
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bolder
+}
+
+.TextFont16 {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: bolder
+}
+
+.TextFont17 {
+    font-family: Arial;
+    font-size: 17px;
+    font-weight: bolder
+}
+
+.NoBorderImg {
+    background: none repeat scroll 0 0 transparent;
+    border: medium;
+    padding: 0
+}
+
+.BorderImg {
+    border: 1px solid #000
+}
+
+.ImgLeft {
+    float: left;
+    margin: 0 10px 5px 0
+}
+
+.ImgRight {
+    float: right;
+    margin: 0 0 5px 10px
+}
+
+.EventTitleBar h1 {
+    color: #00ffcd;
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: bolder;
+    line-height: 20px;
+    padding: 20px 0 9px
+}
+
+ul#tabHeader {
+    border-bottom: #000 dotted 1px;
+    height: 39px;
+    margin-bottom: 10px;
+    width: 100%
+}
+
+ul#tabHeader li {
+    float: left;
+    font-size: 12px;
+    font-weight: bolder
+}
+
+ul#tabHeader li a:link,
+ul#tabHeader li a:visited {
+    background: #262626;
+    border-bottom: 0;
+    display: block;
+    float: left;
+    position: relative;
+    text-align: center;
+    text-decoration: none
+}
+
+ul#tabHeader li a span {
+    border-bottom: 0;
+    color: #fff;
+    cursor: pointer;
+    float: left;
+    font-size: 14px;
+    padding: 7px 20px;
+    text-decoration: none
+}
+
+ul#tabHeader li.Active a:link,
+ul#tabHeader li.Active a:visited,
+ul#tabHeader li a:hover {
+    text-decoration: none
+}
+
+ul#tabHeader li.Active a span,
+ul#tabHeader li a:hover span {
+    background: #00ae8c;
+    color: #fff
+}
+
+
+.ContentBlock {
+    clear: both;
+    padding-bottom: 20px
+}
+
+.ContentBlock p {
+    margin-bottom: 10px;
+    padding-right: 3px;
+    text-align: justify
+}
+
+.StaticMain p.TextCenter {
+    text-align: center
+}
+
+.StaticMain p.ImgCenter {
+    margin-bottom: 20px;
+    text-align: center
+}

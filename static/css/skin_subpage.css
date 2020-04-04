@@ -2181,6 +2181,13 @@ li.last-child {
     line-height: 1.4
 }
 
+.static h2, .static h4 {
+    background: url(../images/ico-h4.png) no-repeat scroll 0 center;
+    font-size: 20px;
+    margin-top: 10px;
+    text-indent: 25px;
+}
+
 #content {
     font-size: 14px;
     line-height: 20px;
@@ -2522,4 +2529,16 @@ ul#tabHeader li a:hover span {
 .StaticMain p.ImgCenter {
     margin-bottom: 20px;
     text-align: center
+}
+
+.page-header__logo {
+    background: url(../images/logo.png) no-repeat 0 0/100%;
+    display: block;
+    width: 230px;
+    height: 184px;
+    position: absolute;
+    top: 0;
+    left: 16px;
+    z-index: 20;
+    text-indent: -9999px;
 }
